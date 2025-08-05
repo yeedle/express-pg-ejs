@@ -1,7 +1,15 @@
 <html>
+    <head>
+        <style>
+            .red {
+                color: blue;
+            }
+        </style>
+    </head>
    <body>
     <% if (user) { %>
-        <h2><%= user.name %></h2>
+        <%= cls %>
+        <h2 class="<%= cls %>"><%= user.name %></h2>
       <% } %>
       Hello <%= people.join(", "); %>
    </body>
