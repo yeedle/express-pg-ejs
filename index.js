@@ -31,7 +31,7 @@ const port = 3000
 
 
 app.get('/ejs2', (req, res) => {
-    res.render('index', {people: ['geddy', 'neil', 'alex']});
+    res.render('index', {people: ['geddy', 'neil', 'alex'], user: {name: 'alex'}});
   });
 
 // const where = `id = 1; drop table users;`
